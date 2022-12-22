@@ -1,6 +1,6 @@
 project('namecheap-client', ['c', 'vala'],
-  version : '0.1',
-  default_options : ['warning_level=3'])
+        version : '0.1',
+        default_options : ['warning_level=3'])
 
 dependencies = [
   dependency('glib-2.0'),
