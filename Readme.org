@@ -1,0 +1,21 @@
+* Vala Namecheap client
+This is a simple client for [[https://namecheap.com][Namecheap]]. Configuration is carried out either with environment variables or with command line options.
+
+** Environment variables
+| Variable           | Meaning                               |
+|--------------------+---------------------------------------|
+| ~NAMECHEAP_HOST~   | Hostname (e.g. www)                   |
+| ~NAMECHEAP_DOMAIN~ | Domain name (e.g. example.com)        |
+| ~NAMECHEAP_SECRET~ | Namecheap API key                     |
+| ~NAMECHEAP_IFACE~  | Network interface (e.g. enp2s0, eth0) |
+
+** Command line options
+| Option            | Meaning                               |
+|-------------------+---------------------------------------|
+| ~--host=HOST~     | Hostname (e.g. www)                   |
+| ~--domain=DOMAIN~ | Domain name (e.g. example.com)        |
+| ~--secret=SECRET~ | Namecheap API key                     |
+| ~--iface=IFACE~   | Network interface (e.g. enp2s0, eth0) |
+| ~--ip=IP~         | IP address to use (e.g. 8.8.8.8)      |
+
+Command line options take precedence over environment variables. ~ip~ option disables detection of IP address.
